@@ -1,0 +1,21 @@
+1
+a	Content-Type	text/plain
+	Content-Length	14
+	Server			nginx/1.2.2
+b 	Content-Type	image/png
+	Content-Length	335525
+	Server			nginx/1.2.2
+b 	Content-Type	application/octet-stream
+	Content-Length	1137202
+	Server			nginx/1.2.2
+2
+a http://localhost/lw1/mysql_is_a_database_server.html Страница не найдена (404)
+b http://localhost/lw1/all_begin_from_http.html Возвращается корректная страница в кодировке, отличной от ожидаемой (UTF-8, Windows-1251) (200)
+c http://localhost/lw1/nginx_is_fast_http_server.txt (200)
+d http://localhost/lw1/php_is_a_server_scripting_language.php Перенаправление на http://fi2.php.net/manual/ru/ (302)
+e http://localhost/lw1/php_is_run_by_web_server.php (custom 502 Good luck)
+f http://localhost/lw1/web_is_funny_place.php (custom 500 What to do?)
+g http://localhost/lw1/javascript_is_a_client_side_language.php?how_to_work=hardly (400 Work hard!)
+	http://localhost/lw1/javascript_is_a_client_side_language.php?how_to_work=hard (200 OK)
+	
+3 для того чтобы задать кодировку документа, иначе будет применена дефолтная
