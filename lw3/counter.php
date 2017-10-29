@@ -17,8 +17,8 @@ foreach ($charArray as $char ) {
 
 foreach ($elementsCount as $element => $count) {
     if ($element === ' ') {
-        echo '" " (пробел)'.' - '.$count.'</br>';
+        echo '" " (пробел)' . ' - '.$count . '</br>';
     } else {
-        echo $element.' - '.$count.'</br>';
+        echo $element.' - ' . $count . '</br>';
     }
 }
