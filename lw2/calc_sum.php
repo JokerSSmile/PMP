@@ -18,7 +18,7 @@ function getRequestNumber($argName)
         return intval($number);
 	}
 	
-    throw new Exception('Параметры arg1 или arg2 содержат данные, отличные от числовых');
+    throw new Exception('Параметр ' . $argName . ' содержит данные, отличные от числовых');
 }
 
 function calculateResult($operation, $value1, $value2)
